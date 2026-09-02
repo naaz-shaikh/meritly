@@ -1,6 +1,34 @@
 import streamlit as st
 from core.scoring import get_recommendations
 from ui.results import display_results
+st.markdown("""
+<style>
+    .stApp {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F5FF 100%);
+    }
+    .stButton>button {
+        background-color: #2563EB;
+        color: white;
+        border-radius: 8px;
+        padding: 0.6em 1.5em;
+        border: none;
+        font-weight: 600;
+    }
+    .stButton>button:hover {
+        background-color: #1D4ED8;
+        color: white;
+    }
+    div[data-testid="stExpander"] {
+        border: 1px solid #E2E8F0;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        background-color: #FAFBFF;
+    }
+    h1, h2, h3 {
+        color: #1E293B;
+    }
+</style>
+""", unsafe_allow_html=True)
 st.set_page_config(page_title="Meritly", page_icon="🎓", layout="centered")
 
 st.title("🎓 Meritly")
