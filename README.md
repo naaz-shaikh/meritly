@@ -5,6 +5,7 @@
 Meritly isn't a college predictor — it's a decision-support tool. Instead of just telling students their odds, it helps them build a confident, personalized shortlist of Dream, Likely, and Safe colleges based on their percentile, category, preferred branch, and city.
 
 🔗 **Live app:** [meritly.streamlit.app](https://meritly.streamlit.app)
+![Meritly Screenshot](screenshot.png)
 
 ## Why I built this
 
