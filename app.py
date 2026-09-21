@@ -1,6 +1,10 @@
 import streamlit as st
 from core.scoring import get_recommendations
 from ui.results import display_results
+
+st.set_page_config(page_title="Meritly", page_icon="🎓", layout="centered")
+st.markdown('<meta name="google-site-verification" content="uNK9gFMssRhyKHO07pbFelFQTcux-NmFx4sjOh6ks1s" />', unsafe_allow_html=True)
+
 st.markdown("""
 <style>
     .stApp {
@@ -29,8 +33,7 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-st.set_page_config(page_title="Meritly", page_icon="🎓", layout="centered")st.markdown('<meta name="google-site-verification" content="<meta name="google-site-verification" content="uNK9gFMssRhyKHO07pbFelFQTcux-NmFx4sjOh6ks1s" />" />', unsafe_allow_html=True)
-st.markdown('<meta name="google-site-verification" content="uNK9gFMssRhyKHO07pbFelFQTcux-NmFx4sjOh6ks1s" />', unsafe_allow_html=True)
+
 st.title("🎓 Meritly")
 st.subheader("Find the right engineering college for you — not just a predicted one.")
 
