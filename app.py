@@ -38,6 +38,7 @@ st.title("🎓 Meritly")
 st.subheader("Find the right engineering college for you — not just a predicted one.")
 
 st.divider()
+st.info("🧪 **Beta** — results are based on sample 2025-26 CAP cutoff data for a limited set of colleges. Always verify final decisions with official CAP round sources.")
 
 st.write("Tell us about your exam result, and we'll help you build a confident shortlist.")
 
@@ -53,3 +54,5 @@ if submitted:
     results = get_recommendations(percentile, branch, cities)
     st.success(f"Found {len(results['Dream'])} Dream, {len(results['Likely'])} Likely, and {len(results['Safe'])} Safe colleges for you.")
     display_results(results)
+    st.divider()
+    st.markdown("📝 **Found this useful?** [Give 2-minute feedback](https://docs.google.com/forms/d/e/1FAIpQLScV14V7cL6ssTbF8I5f8mgg8Mfqjp_47bRQWq7np2heiW0CMw/viewform) — it genuinely helps me improve this.")
